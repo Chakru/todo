@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div>
-      Hello
+      Hello There. This is the todo app
     </div>
   );
 }
