@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ToDoInput from './components/toDoInput.component';
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import {v1 as uuid} from "uuid";
 import ToDoList from './components/toDoList.Component';
@@ -73,7 +72,7 @@ class App extends Component
               Todo List
             </h3>
             <ToDoInput item={this.state.item} handleChange={this.handleChange} handleSubmit={this.handleSubmit} editItem={this.state.editItem}/>
-            <ToDoList items={this.state.items} clearList = {this.clearList} handleEdit={this.handleEdit} handleDelete={this.handleDelete}/>
+            <ToDoList items={this.state.items} getTheID={this.getID} clearList = {this.clearList} handleEdit={this.handleEdit} handleDelete={this.handleDelete}/>
           </div>
         </div>
       </div>
